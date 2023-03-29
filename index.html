@@ -24,42 +24,56 @@
     <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
-    <!---Header
+    <!---Header-->
     <header class="header">
       <div class="container header-container">
-        <nav class="header-navigation">
-          <a href="./index.html" class="header-logo logo link">
-            <span class="logo-iris">Web</span>Studio</a
-          >
-          <ul class="header-list list">
-            <li class="header-item">
-              <a href="/" class="header-link link active">Studio</a>
-            </li>
-            <li class="header-item">
-              <a href="./portfolio.html" class="header-link link">Portfolio</a>
-            </li>
-            <li class="header-item">
-              <a href="/" class="header-link link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="contact">
-          <ul class="contact-list list">
-            <li class="contact-item">
-              <a href="mailto:info@devstudio.com" class="contact-link link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contact-item">
-              <a href="tel:+110001111111" class="contact-link link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <a href="./index.html" class="header-logo logo link">
+          <span class="logo-iris">Web</span>Studio</a
+        >
+        <button type="button" class="mobile-menu-button js-open-menu">
+          <svg class="menu-icon">
+            <use href="./images/symbol-defs.svg#icon-icon-menu"></use>
+          </svg>
+        </button>
+        <div class="header-nav-wrap is-hidden js-menu-container">
+          <button type="button" class="close-button-menu js-close-menu">
+            <svg class="close-icon-menu">
+              <use href="./images/symbol-defs.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <nav class="header-navigation">
+            <ul class="header-list list">
+              <li class="header-item">
+                <a href="/" class="header-link link active">Studio</a>
+              </li>
+              <li class="header-item">
+                <a href="./portfolio.html" class="header-link link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="header-item">
+                <a href="/" class="header-link link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="contact">
+            <ul class="contact-list list">
+              <li class="contact-item">
+                <a href="mailto:info@devstudio.com" class="contact-link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contact-item">
+                <a href="tel:+110001111111" class="contact-link link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
-  Header-->
+    <!--Header-->
     <main>
       <!--Hero section-->
       <section class="hero">
@@ -560,5 +574,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src=".js/mobile-menu.js"></script>
   </body>
 </html>
