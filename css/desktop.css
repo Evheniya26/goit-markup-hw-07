@@ -2,6 +2,21 @@
   .container {
     max-width: 1158px;
   }
+  .header {
+    padding: 0;
+  }
+  .header-container {
+  }
+  .header-list {
+    margin-bottom: 0;
+  }
+  .contact-list {
+    display: flex;
+    flex-direction: row;
+    padding-top: 24px;
+    gap: 40px;
+    margin-left: 332px;
+  }
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -99,6 +114,21 @@
   .portfolio {
     padding-top: 96px;
     padding-bottom: 120px;
+  }
+  .portfolio-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .portfolio-list-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .portfolio-pictures-item {
+    width: calc((100% - 48px) / 3);
   }
   .footer-container {
     display: flex;

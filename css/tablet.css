@@ -5,17 +5,40 @@
   .header-logo {
     margin-right: 76px;
   }
+  .mobile-menu-button {
+    display: none;
+  }
+  .header-navigation {
+    display: flex;
+    align-items: center;
+  }
+  .header-nav-wrap {
+    display: flex;
+    width: unset;
+    background-color: transparent;
+    max-width: unset;
+    height: unset;
+    position: static;
+    transform: none;
+    padding: 0;
+  }
+  .header-nav-wrap.is-open {
+  }
+  .close-button-menu {
+    display: none;
+  }
   .header-list {
     display: flex;
     gap: 40px;
+    margin-bottom: 8px;
   }
   .header-link {
     font-weight: 500;
-
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: var(--dark-color);
-
     position: relative;
-
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header-link:hover,
@@ -34,6 +57,31 @@
     position: absolute;
     left: 0;
     bottom: -28px;
+  }
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    column-gap: 6px;
+    margin-left: 118px;
+  }
+  .contact-item {
+    margin-bottom: 6px;
+  }
+  .contact-tel {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
+  }
+  .contact-email {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+  .header-social-list {
+    display: none;
   }
   .hero {
     background-image: linear-gradient(
@@ -89,9 +137,42 @@
   .activity {
     display: none;
   }
+  .customer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
   .portfolio {
     padding-top: 64px;
     padding-bottom: 96px;
+  }
+  .portfolio-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .portfolio-list-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .portfolio-pictures-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .portfolio-pictures-item:last-child {
+    margin-right: auto;
+  }
+  .portfolio-list-btn {
+    margin-bottom: 48px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
   }
   .footer-container {
     flex-direction: row;

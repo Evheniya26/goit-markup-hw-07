@@ -144,7 +144,6 @@ body {
 .menu-icon {
 }
 .header-nav-wrap {
-  /*display: none;*/
   position: fixed;
   top: 0;
   left: 0;
@@ -152,9 +151,11 @@ body {
   height: 100vh;
   background-color: var(--white-color);
   padding: 24px;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
 }
 .header-nav-wrap.is-open {
-  display: block;
+  transform: translateX(0);
 }
 .close-button-menu {
   position: absolute;
@@ -184,17 +185,19 @@ body {
 .header-logo {
 }
 .header-list {
+  margin-top: 32px;
+  margin-bottom: 84px;
 }
 .header-item {
+  margin-bottom: 40px;
 }
 .header-link {
-  font-weight: 500;
-
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: var(--dark-color);
-
-  position: relative;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:hover,
 .header-link:focus {
@@ -218,9 +221,10 @@ body {
 }
 .contact-list {
   display: flex;
-  gap: 40px;
+  flex-direction: column-reverse;
 }
 .contact-item {
+  margin-bottom: 40px;
 }
 .contact-link {
   color: var(--text-color);
@@ -231,76 +235,48 @@ body {
 .contact-link:focus {
   color: var(--primary-brand-color);
 }
-/*.header {
-  border-bottom: 1px solid var(--accent-color);
-  padding-top: 24px;
-  padding-bottom: 24px;
-
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+.contact-tel {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-brand-color);
 }
-.header-container {
-  display: flex;
-  align-items: center;
-}
-.header-navigation {
-  display: flex;
-  align-items: center;
-}
-.header-logo {
-  margin-right: 76px;
-}
-.header-list {
-  display: flex;
-  gap: 40px;
-}
-.header-item {
-}
-.header-link {
+.contact-email {
   font-weight: 500;
-
-  color: var(--dark-color);
-
-  position: relative;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-link:hover,
-.header-link:focus {
-  color: var(--primary-brand-color);
-}
-.header-link.active {
-  color: var(--pressed-state-color);
-}
-.header-link.active::after {
-  content: '';
-  width: 100%;
-  height: 4px;
-  background-color: var(--pressed-state-color);
-  border-radius: 2px;
-  position: absolute;
-  left: 0;
-  bottom: -28px;
-}
-.contact {
-  margin-left: auto;
-}
-.contact-list {
-  display: flex;
-  gap: 40px;
-}
-.contact-item {
-}
-.contact-link {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   color: var(--text-color);
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-link:hover,
-.contact-link:focus {
-  color: var(--primary-brand-color);
-} */
+.header-social-list {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
 
+  gap: 64px;
+}
+.header-social-item {
+  width: 40px;
+  height: 40px;
+}
+.header-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  fill: var(--light-color);
+  background-color: var(--primary-brand-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-social-icon {
+  width: 24px;
+  height: 24px;
+}
 /*----------------------Hero----------------------*/
 
 .hero {
@@ -549,9 +525,9 @@ body {
 .visually-hidden {
 }
 .portfolio-list-btn {
-  margin-bottom: 72px;
+  margin-bottom: 48px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 .portfolio-item-btn {
@@ -584,7 +560,6 @@ body {
   row-gap: 48px;
 }
 .portfolio-pictures-item {
-  /*width: calc((100% - 48px) / 3); width for link*/
 }
 .portfolio-overlay {
   overflow: hidden;
@@ -634,6 +609,102 @@ body {
 .portfolio-text {
   color: var(--text-color);
 }
+/*
+.portfolio {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.portfolio-container {
+}
+.visually-hidden {
+}
+.portfolio-list-btn {
+  margin-bottom: 72px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.portfolio-item-btn {
+}
+.portfolio-btn {
+  color: var(--primary-brand-color);
+
+  background-color: var(--light-color);
+
+  border-color: var(--accent-color);
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-color: var(--pressed-state-color);
+  background-color: var(--pressed-state-color);
+}
+.portfolio-list-pictures {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 48px;
+}
+.portfolio-pictures-item {
+width: calc((100% - 48px) / 3); width for link
+
+.portfolio-overlay {
+  overflow: hidden;
+  position: relative;
+}
+.portfolio-text-overlay {
+  color: var(--light-color);
+  background-color: var(--primary-brand-color);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+  top: 0;
+  left: 0;
+
+  transform: translateY(100%);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-card-link {
+  display: block;
+  width: 100%;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-card-link:hover,
+.portfolio-card-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.portfolio-card-link:hover .portfolio-text-overlay {
+  transform: translateY(0);
+}
+
+.portfolio-content {
+  background: var(--white-color);
+  padding: 32px 16px;
+  border-right: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.portfolio-subtitle {
+  margin-bottom: 8px;
+}
+.portfolio-text {
+  color: var(--text-color);
+}
+*/
 
 /*----------------------Footer----------------------*/
 
