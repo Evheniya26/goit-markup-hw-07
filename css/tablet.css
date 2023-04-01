@@ -2,6 +2,13 @@
   .container {
     max-width: 736px;
   }
+  .header {
+    padding-bottom: 0;
+  }
+  .header-container {
+    padding-bottom: 0;
+  }
+
   .header-logo {
     margin-right: 76px;
   }
@@ -144,6 +151,12 @@
     align-items: center;
     column-gap: 24px;
     row-gap: 72px;
+  }
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
   }
   .portfolio {
     padding-top: 64px;

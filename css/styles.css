@@ -251,7 +251,7 @@ body {
   color: var(--text-color);
 }
 .header-social-list {
-  margin-top: 48px;
+  margin-top: 180px;
   display: flex;
   justify-content: center;
 
@@ -412,7 +412,8 @@ body {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 24px;
 }
 .team-item {
   width: 100%;

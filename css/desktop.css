@@ -136,8 +136,10 @@
   }
   .footer-info {
     margin-left: 0;
+    margin-bottom: 0;
   }
   .footer-media {
+    margin-bottom: 0;
     margin-left: 120px;
     align-items: flex-start;
   }
