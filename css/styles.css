@@ -153,6 +153,7 @@ body {
   padding: 24px;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  z-index: 4;
 }
 .header-nav-wrap.is-open {
   transform: translateX(0);
@@ -185,13 +186,14 @@ body {
 .header-logo {
 }
 .header-list {
-  margin-top: 32px;
   margin-bottom: 84px;
 }
 .header-item {
-  margin-bottom: 40px;
+  /*margin-bottom: 40px;*/
 }
 .header-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -207,19 +209,19 @@ body {
   color: var(--pressed-state-color);
 }
 .header-link.active::after {
-  content: '';
+  /* content: '';
   width: 100%;
   height: 4px;
   background-color: var(--pressed-state-color);
   border-radius: 2px;
   position: absolute;
-  left: 0;
-  bottom: -28px;
+  left: 0;*/
 }
 .contact {
   margin-left: auto;
 }
 .contact-list {
+  padding-top: 0;
   display: flex;
   flex-direction: column-reverse;
 }

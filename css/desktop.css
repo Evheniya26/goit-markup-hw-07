@@ -10,6 +10,9 @@
   .header-list {
     margin-bottom: 0;
   }
+  .header-link.active::after {
+    bottom: -2px;
+  }
   .contact-list {
     display: flex;
     flex-direction: row;
@@ -155,5 +158,8 @@
   }
   .subscribe-btn {
     margin-left: 24px;
+  }
+  .modal {
+    margin-top: 0;
   }
 }

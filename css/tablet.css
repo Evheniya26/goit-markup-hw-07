@@ -8,7 +8,6 @@
   .header-container {
     padding-bottom: 0;
   }
-
   .header-logo {
     margin-right: 76px;
   }
@@ -40,6 +39,8 @@
     margin-bottom: 8px;
   }
   .header-link {
+    display: block;
+    padding: 24px 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -63,12 +64,11 @@
     border-radius: 2px;
     position: absolute;
     left: 0;
-    bottom: -28px;
+    bottom: -9px;
   }
   .contact-list {
-    display: flex;
-    flex-direction: column;
-    column-gap: 6px;
+    display: block;
+
     margin-left: 118px;
   }
   .contact-item {
@@ -247,5 +247,8 @@
   .customer-item {
     width: calc((100% - 48px) / 3);
     height: 88px;
+  }
+  .modal {
+    margin-top: 26px;
   }
 }
