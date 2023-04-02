@@ -16,9 +16,11 @@
   .contact-list {
     display: flex;
     flex-direction: row;
-    padding-top: 24px;
     gap: 40px;
     margin-left: 332px;
+  }
+  .contact-item {
+    margin: 0;
   }
   .hero {
     background-image: linear-gradient(
