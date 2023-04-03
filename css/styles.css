@@ -186,7 +186,7 @@ body {
 .header-logo {
 }
 .header-list {
-  margin-bottom: 84px;
+  margin-bottom: 284px;
 }
 .header-item {
   /*margin-bottom: 40px;*/
@@ -253,7 +253,7 @@ body {
   color: var(--text-color);
 }
 .header-social-list {
-  margin-top: 180px;
+  margin-top: 8px;
   display: flex;
   justify-content: center;
 
@@ -287,7 +287,7 @@ body {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/bg-mobile.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 112px;

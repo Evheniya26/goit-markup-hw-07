@@ -13,21 +13,25 @@
   .header-link.active::after {
     bottom: -2px;
   }
+  .contact {
+    margin-left: 332px;
+  }
   .contact-list {
     display: flex;
     flex-direction: row;
     gap: 40px;
-    margin-left: 332px;
   }
   .contact-item {
     margin: 0;
   }
   .hero {
+    padding: 188px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/bg-desktop.jpg);
+    background-size: cover;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192pdi),
@@ -39,6 +43,8 @@
         ),
         url(../images/bg-desktop-2x.jpg);
     }
+  }
+  .hero-container {
   }
   .hero-title {
     font-size: 56px;

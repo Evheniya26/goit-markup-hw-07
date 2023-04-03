@@ -3,6 +3,7 @@
     max-width: 736px;
   }
   .header {
+    padding-top: 0;
     padding-bottom: 0;
   }
   .header-container {
@@ -70,14 +71,13 @@
   .contact {
     display: flex;
     align-items: center;
+    margin-left: 118px;
   }
   .contact-list {
     display: block;
-
-    margin-left: 118px;
   }
   .contact-item {
-    margin-bottom: 6px;
+    margin-bottom: 0px;
   }
   .contact-tel {
     font-weight: 400;
@@ -85,7 +85,6 @@
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #434455;
-    margin-bottom: 0;
   }
   .contact-email {
     font-weight: 400;
@@ -97,12 +96,12 @@
     display: none;
   }
   .hero {
+    background-size: cover;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/bg-tablet.jpg);
-    background-size: 100%;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192pdi),
